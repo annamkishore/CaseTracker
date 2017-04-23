@@ -12,4 +12,7 @@ export class CaseDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
+  addSelected() {
+    alert();
+  }
 }

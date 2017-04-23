@@ -1,3 +1,63 @@
-<p>
-  case-details works!
-</p>
+
+<div class="row form-group">
+  <div class="col-xs-4">Case No</div>
+  <div class="col-xs-8"><input type="text" class="form-control" name="caseNo"></div>
+</div>
+
+<div class="row form-group">
+  <div class="col-xs-4">Date filed</div>
+  <!--<div class="col-xs-4">Date Filed</div>-->
+  <div class="col-xs-8"><input type="text" class="form-control" name="dateFiled"></div>
+</div>
+
+<div class="row form-group">
+  <div class="col-xs-4">Case Title</div>
+  <div class="col-xs-8"><input type="text" class="form-control" name="caseTitle"></div>
+</div>
+
+<div class="row form-group">
+  <div class="col-xs-4">Case Category</div>
+  <div class="col-xs-8"><select class="form-control" name="caseCategory">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select></div>
+</div>
+
+<div class="row form-group">
+  <div class="col-xs-4">Case type</div>
+  <div class="col-xs-8"><select class="form-control" name="caseType">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select></div>
+</div>
+
+<div class="row form-group">
+  <div class="col-xs-4">Case Sections</div>
+  <div class="col-xs-8">
+    <div class="col-xs-10" style="padding-left: 0px; padding-right: 5px">
+      <select class="form-control" name="caseSections">
+        <option>Select one</option>
+        <option>420</option>
+        <option>300</option>
+        <option>302</option>
+        <option>307</option>
+      </select>
+    </div>
+    <div class="col-xs-2" style="padding-left: 0px; padding-right: 0px">
+      <button class="btn btn-block btn-primary" style="padding-right: 0px; padding-left: 0px" (click)="addSelected()">ADD</button>
+    </div>
+  </div>
+  <div class="col-xs-12" style="padding-top: 5px">
+    <select multiple class="form-control" name="caseSectionsSelected"></select>
+  </div>
+</div>
+
+
+<div class="row form-group">
+  <div class="col-xs-5">Case Comments</div>
+  <div class="col-xs-12"><textarea type="text"  rows="4" class="form-control" name="caseComments">Case related comments</textarea></div>
+</div>
