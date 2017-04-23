@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseTabsComponent implements OnInit {
 
+  currTab: any;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  test1(tabs1: any) {
+    this.currTab = tabs1.find(tab => tab.active);
+  }
 }

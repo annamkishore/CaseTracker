@@ -1,7 +1,8 @@
 
-<div class="col-xs-12" style="background-color: #eff1f8; text-align: center" >Case Details</div>
+{{ test1(tabs1.tabs)  }}
+<div class="col-xs-12" style="background-color: #eff1f8; text-align: center" >{{ currTab.title.toUpperCase() }}</div>
 
-<tabs>
+<tabs #tabs1>
   <tab [tabTitle]='"Case Details"'>
     <ct-case-details></ct-case-details>
   </tab>
