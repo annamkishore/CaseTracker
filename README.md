@@ -26,3 +26,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Commands to run end-to-end (handy purpose)
+ng serve --host 192.168.1.6  
+ng build --target=production --environment=prod --output-path cordova/www/ --base-href .  
+cordova build android
