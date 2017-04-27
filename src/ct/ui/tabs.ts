@@ -17,7 +17,7 @@ import { Tab } from './tab';
   template:`
     <ul class="nav nav-pills">
       <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
-        <a href="#">{{tab.title}}</a>
+        <button class="col-xs-3 btn btn-block btn-default">K {{tab.title}}</button>
       </li>
     </ul>
     <ng-content></ng-content>
