@@ -9,7 +9,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "buildProd": "ng build --target=production --environment=prod --output-path cordova/www/ --base-href .",
+    "buildCordova": "cd cordova && cordova build android",
+    "runCordovaBrowser": "cd cordova && cordova run browser"
   },
   "private": true,
   "dependencies": {

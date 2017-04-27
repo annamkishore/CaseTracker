@@ -31,3 +31,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng serve --host 192.168.1.6  
 ng build --target=production --environment=prod --output-path cordova/www/ --base-href .  
 cordova build android
+cordova run android
