@@ -2,12 +2,24 @@
 <nav class="navbar navbar-inverse" style="margin-bottom: 0px">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"  (click)="toggleNavButton()">
+      <button type="button" class="navbar-toggle" style="float: left; border: 0; margin: 0px; padding-top: 17px" data-toggle="collapse" (click)="toggleNavButton()">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">CASE TRACKER</a>
+      <div>
+        <p class="navbar-brand" style="margin: 0px; font-size: 20px; color: white">CASE TRACKER</p>
+      </div>
+      <div class="input-group" style="margin: 0px; padding-top: 8px">
+        <input type="text" class="form-control" placeholder="Search"
+               style="border-top-left-radius: 15px; border-bottom-left-radius: 15px">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit"
+                  style="border-bottom-right-radius: 15px; border-top-right-radius: 15px">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
     </div>
     <div class="navbar-collapse" [ngClass]="{'collapse': isCollapsed}">
       <ul class="nav navbar-nav">
