@@ -1,2 +1,22 @@
+<!--Nav Bar-->
+<nav class="navbar navbar-inverse" style="margin-bottom: 0px">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"  (click)="toggleNavButton()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CASE TRACKER</a>
+    </div>
+    <div class="navbar-collapse" [ngClass]="{'collapse': isCollapsed}">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Action 1</a></li>
+        <li><a href="#">Action 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!--Tabs-->
 <ct-case-tabs></ct-case-tabs>

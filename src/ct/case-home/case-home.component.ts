@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseHomeComponent implements OnInit {
 
+  isCollapsed = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleNavButton() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }
