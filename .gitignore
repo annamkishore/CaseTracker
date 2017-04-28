@@ -44,3 +44,4 @@ Thumbs.db
 # cordova
 /cordova/platforms
 /cordova/www
+!/cordova/platforms/android/build/outputs/apk/android-debug.apk
