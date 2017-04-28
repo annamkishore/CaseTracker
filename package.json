@@ -1,19 +1,18 @@
 {
   "name": "case-tracker",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Case Tracker",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "ngBuildProd": "ng build --target=production --environment=prod --output-path cordova/www/ --base-href .",
+    "corBuildAndr": "cd cordova && cordova build android",
+    "ngServeH": "ng serve --host 192.168.1.6",
+    "ngServeO": "ng serve --host 192.168.174.184",
+    "corRunBrowser": "cd cordova && cordova run browser",
+    "generateApk": "npm run ngBuildProd && npm run corBuildAndr",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "buildProd": "ng build --target=production --environment=prod --output-path cordova/www/ --base-href .",
-    "buildCordova": "cd cordova && cordova build android",
-    "ngServe": "ng serve --host 192.168.1.6",
-    "runCordovaBrowser": "cd cordova && cordova run browser"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

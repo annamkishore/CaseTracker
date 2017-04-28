@@ -15,11 +15,11 @@ import { Tab } from './tab';
 @Component({
   selector: 'tabs',
   template:`
-    <ul class="nav nav-pills">
+    <div class="nav nav-pills">
       <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
-        <button class="col-xs-3 btn btn-block btn-default">K {{tab.title}}</button>
+        <a class="col-xs-3 btn-block">{{tab.title}}</a>
       </li>
-    </ul>
+    </div>
     <ng-content></ng-content>
   `
 })
